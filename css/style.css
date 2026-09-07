@@ -8494,8 +8494,7 @@ h1, h2, h3, h4, h5,
               .owl-carousel.home-slider .slider-item .slider-text .one-third:after {
                 opacity: 0; } }
         .owl-carousel.home-slider .slider-item .slider-text .one-forth {
-          width: 50%;
-          position: relative; }
+          max-width: 1140px; }
           @media (min-width: 768px) {
             .owl-carousel.home-slider .slider-item .slider-text .one-forth {
               position: absolute;
@@ -8579,6 +8578,12 @@ h1, h2, h3, h4, h5,
       left: 0;
       right: 0;
       margin: 0 auto; }
+
+
+@media(max-width: 430px) {
+  
+}
+
       @media (max-width: 991.98px) {
         .owl-carousel.home-slider .owl-nav {
           display: none; } }
@@ -8778,6 +8783,7 @@ h1, h2, h3, h4, h5,
 .ftco-about .img-about {
   width: 100%;
   z-index: 0;
+  margin: 0 1rem;
   position: relative; }
   .ftco-about .img-about .img {
     display: block;
@@ -9089,7 +9095,7 @@ textarea.form-control {
 .ftco-footer {
   font-size: 16px;
   background: #000000;
-  padding: 7em 0;
+  padding: 7em 0 3rem 0;
   z-index: 0; }
   .ftco-footer .ftco-footer-logo {
     text-transform: uppercase;
@@ -9191,8 +9197,10 @@ textarea.form-control {
   margin: 0 auto;
   transform: scaleX(1.2); /* Stretch the text by 1.2 times */ }
 
+  .counter-wrap.ftco-animate{margin: 0 1rem;}
+
 .heading-section {
-  position: relative; }
+  position: relative;  margin: 0 1rem;}
   .heading-section .subheading {
     font-size: 13px;
     font-weight: 500;
@@ -9321,7 +9329,8 @@ textarea.form-control {
   position: relative;
   display: block;
   width: 100%;
-  height: 180px; }
+  height: 250px; border-radius: 20px 20px 0 0; }
+
 
 .blog-entry {
   position: relative; }
@@ -9333,7 +9342,7 @@ textarea.form-control {
       margin-bottom: 30px; } }
   .blog-entry .text {
     width: 100%;
-    margin: 0 auto; }
+    margin: 0 auto; background-color: #111; padding: 2rem 1rem; border-radius: 0 0 20px 20px; }
     .blog-entry .text .heading {
       font-size: 20px;
       margin-bottom: 16px;
